@@ -1,11 +1,11 @@
 import { Schema, model } from 'mongoose';
 
 const roleSchema = new Schema({
-  name: {
+  NAME: {
     type: String,
     require: true
   },
-  location: {
+  LOCATION: {
     type: String,
     required: true
   }
