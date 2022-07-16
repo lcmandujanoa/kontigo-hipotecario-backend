@@ -5,6 +5,7 @@ export const GET_OPERATION = (req, res) => {
 }
 
 export const GET_OPERATIONS = async (req, res) => {
+  console.log(req.headers.authorization);
   const OPERACIONES = await Operation.find();
   res.json(OPERACIONES);
 }
